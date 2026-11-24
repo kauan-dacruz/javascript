@@ -31,7 +31,7 @@
 
        <input type="button" id="butao" onclick="mul()" >
 
-       <p id="res">Resultado</p>
+       <p id="res"></p>
     </div>
 
     <script>
@@ -42,7 +42,12 @@
 
             var res = m1*m2
 
-            butao.innerHTML = `O resultado é: ${res}`
+            if (res >10){
+                butao.innerHTML = `O Resultado entre ${m1}*${m2} = ${res}`       
+            } else {
+                butao.innerHTML = `O Resultado entre ${m1}*${m2} = ${res}`
+                butao.innerHTML = 'menor que 100'
+            }
 
 
         }
