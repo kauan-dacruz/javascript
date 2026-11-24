@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+    <style>
+        div{
+            background-color: rgb(148, 237, 237);
+            padding: 10px;
+            border-radius: 10px;
+            width: 200px;
+            display: grid;
+        }
+        input#butao{
+            width: 30px;
+            height: 30px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <h1>Múltiplicar</h1>
+        <hr>
+
+        <input type="number" id="n1">
+
+        <input type="number" id="n2">
+
+       <input type="button" id="butao" onclick="mul()" >
+
+       <p id="res">Resultado</p>
+    </div>
+
+    <script>
+        function mul(){
+            var m1 = Number(document.getElementById('n1').value)
+            var m2 = Number(document.getElementById('n2').value)
+            var butao = document.getElementById('res')
+
+            var res = m1*m2
+
+            butao.innerHTML = `O resultado é: ${res}`
+
+
+        }
+    </script>
+</body>
+</html>

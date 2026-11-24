@@ -33,6 +33,3 @@ console.log(usuarios1[0])*/
 
 
 
-
-
-
