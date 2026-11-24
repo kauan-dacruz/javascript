@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+    <input type="number" id="n1">
+    <input type="number" id="n2">
+    <button onclick="soma()">Somar</button>
+    <p id="res">Resultado</p>
+    </div>
+
+    <script>
+        function soma(){
+            var n1 = parseFloat(document.getElementById('n1').value)
+            var n2 = parseFloat(document.getElementById('n2').value)
+
+            var soma = n1+n2
+
+            document.getElementById('res').textContent = `A soma entre ${n1}+${n2} = ${soma}`
+        }
+
+    </script>
+</body>
+</html>
