@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySite</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(248, 165, 65);
+        }
+        div.principal{
+            background-color: rgb(113, 168, 168);
+            padding: 10px;
+            width: 200px;
+            height: 250px;
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 200px;
+        }
+        #nome{
+           border-radius: 5px;
+           padding: 5px;
+        }
+        #sexo{
+           border-radius: 5px;
+           padding: 5px;
+        }
+        #data{
+           border-radius: 5px;
+           padding: 5px;
+           width: 160.2px;
+        }
+        #butao{
+           border-radius: 5px;
+           padding-top: 10px 24px;
+           height: 20px;
+           width: 30px;
+        }
+
+    </style>
+</head>
+<body id="cabeca">
+    <div class="principal">
+        <div><input type="text" id="nome" placeholder="Nome"></div>
+        <div><input type="text" id="sexo" placeholder="Sexo"></div>
+        <div><input type="date" id="data"></div>
+        <div><button id="butao" onmouseenter="cor1()" onclick="cor2()" onmouseleave="cor3()"></button></div>
+    </div>
+
+    <script>
+        function cor1(){
+            var cabeca = document.getElementById('cabeca')
+            cabeca.style.backgroundColor = 'blue'
+        }
+
+        function cor2(){
+            var cabeca = document.getElementById('cabeca')
+            cabeca.style.backgroundColor = 'green'
+        }
+
+        function cor3(){
+            var cabeca = document.getElementById('cabeca')
+            cabeca.style.backgroundColor = 'black'
+        }
+
+    </script>
+</body>
+</html>
